@@ -6,6 +6,9 @@
   "scripts": {
     "db:migrate": "dotenv -- npx prisma migrate dev",
     "db:generate": "dotenv -- npx prisma generate",
+    "build": "tsc -b",
+    "start": "node ./dist/src/index.js",
+    "start:worker": "node ./dist/scripts/processor.js",
     "server": "tsx watch src/index.ts",
     "process": "tsx watch scripts/processor.ts",
     "dockerup": "docker compose up",
