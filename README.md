@@ -80,7 +80,7 @@ model AnalyticsEvent {
 # Clone the project
 git clone https://github.com/dotbillu/analytics-ingestion-api.git
 cd analytics-ingestion-api
-
+ 
 # Install dependencies
 pnpm install
 ```
