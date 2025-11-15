@@ -2,7 +2,7 @@
   "name": "analytic-backend",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "db:migrate": "dotenv -- npx prisma migrate dev",
     "db:generate": "dotenv -- npx prisma generate",
     "build": "tsc && tsc-alias",
@@ -36,6 +36,7 @@
     "concurrently": "^9.2.1",
     "dotenv-cli": "^11.0.0",
     "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.9.3"
   }
 }
