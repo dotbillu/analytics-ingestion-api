@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  siteId    String
+  eventType String
+  path      String
+  userId    String
+  timestamp DateTime
+
+  @@index([siteId, eventType, timestamp])
+}
