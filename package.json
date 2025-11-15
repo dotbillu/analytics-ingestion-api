@@ -1,7 +1,6 @@
 {
   "name": "analytic-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "db:migrate": "dotenv -- npx prisma migrate dev",
